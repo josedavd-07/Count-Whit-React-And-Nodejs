@@ -1,6 +1,7 @@
 h1 {
     font-family: 'Courier New', Courier, monospace;
     color-scheme: dark;
+    text-align: center;
 }
 
 p {
@@ -8,6 +9,7 @@ p {
     font-weight: bold;
     font-size: 19px;
     color: rgb(18, 235, 162);
+    text-align: center;
 }
 
 button {
@@ -20,6 +22,9 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.1s;
+    /* Centramos el boton en el center */
+    display: block;
+    margin: 0 auto;
 }
 
 button:hover {
