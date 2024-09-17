@@ -31,9 +31,25 @@ export const ContadorApp = ({ value }) => {
             <button onClick={handleClick}>
                 Soy un botón
             </button>
+            <footer class="ajustar-footer">
+                <p>Todos los derechos reservados &copy; {new Date().getFullYear()}</p>
+            </footer>
         </>
     )
 }
+
+
+
+
+
+/**********************************************************************/
+/**********************************************************************/
+
+//APARTADO QUE FUE USADO PARA EL APRENDIZAJE  DE LOS EVENTOS EN REACT Y APRENDER LAS BASES
+//PERO NO SE USA EN EL PROYECTO FINAL
+
+/**********************************************************************/
+/**********************************************************************/
 
 // Conducir Click Event
 //Esta seria la forma de hacerlo con una función cuando hay un solo argumento o mas

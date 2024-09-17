@@ -12,7 +12,7 @@ p {
     text-align: center;
 }
 
-#Color-Parrafo{
+#Color-Parrafo {
     color: #88e70c;
 }
 
@@ -40,4 +40,9 @@ button:active {
     background-color: #046063;
     /* Color diferente para active */
     transform: scale(0.95);
+}
+
+.ajustar-footer {
+    
+    background-color: #333;
 }
