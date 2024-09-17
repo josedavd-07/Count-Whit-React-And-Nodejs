@@ -3,8 +3,10 @@ import { createRoot } from 'react-dom/client'
 import { ContadorApp } from './ContadorApp'
 import './styles.css'
 
+
+//Pasamos un valo a la función por default
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ContadorApp />
+    <ContadorApp value={0} />
   </StrictMode>,
 )

@@ -1,0 +1,34 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color-scheme: dark;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 19px;
+    color: rgb(18, 235, 162);
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #b80fe2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #e94e77;
+    /* Color diferente para hover */
+}
+
+button:active {
+    background-color: #046063;
+    /* Color diferente para active */
+    transform: scale(0.95);
+}

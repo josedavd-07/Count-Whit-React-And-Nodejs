@@ -1,5 +1,36 @@
 import React from 'react'
 import './styles/ContadorApp.css'
+import { useState } from 'react'
+
+
+// rafc  React Arrow Component Function
+// Aca si lo hacempos dentro de la funcion esto pasara al padre directamente
+// Funcion handleClick es conducir click en ingles y se encarga de manejar el evento
+// La forma mas optima de hacerlo es igualar la funcion a u na constante y a una funcion flecha
+// Importamos useState para poder modificar el estado de la variable value
+export const ContadorApp = ({ value }) => {
+
+    //useState es un hook que nos permite modificar el estado de una variable
+    const [contador, setContador] = useState(value)
+
+    // Usamos el contador  mas set contador para modificar el estado de la variable 
+    const handleClick = () => {
+        setContador(contador + 1)
+    }
+
+    
+    //Reemplazamos value por contador para ahora si modificar el estado de la variable 
+    return (
+        <>
+            <h1>Contador:</h1>
+            <p>{contador}</p>
+            <hr />
+            <button onClick={handleClick}>
+                Soy un botón
+            </button>
+        </>
+    )
+}
 
 // Conducir Click Event
 //Esta seria la forma de hacerlo con una función cuando hay un solo argumento o mas
@@ -18,7 +49,7 @@ export const ContadorApp = () => {
             </button>
         </>
     )
-} 
+}
 */
 
 
@@ -43,7 +74,8 @@ export const ContadorApp = () => {
 //Esta serrio la frma para mas argumentos
 // Conducir Click Event
 /*
-function handleClick(event) {
+//De esta manera se puede pasar mas  de un argumentos a lafunción.
+function handleClick(event,arg) {
     console.log(event)
     console.log(arg)
 }
@@ -56,12 +88,12 @@ export const ContadorApp = () => {
                 Soy un botón
             </button>
         </>
-    )   
+    )
 }
 */
 
 // Forma de hacerlo pero con todo desde afuera de la función
-
+/*
 function handleClick(event) {
     console.log(event)
     console.log(arg)
@@ -84,3 +116,56 @@ export const ContadorApp = () => {
         </>
     )
 }
+*/
+
+// Manera de hacerlo mas comunmente pero todo adentro pero mas orgamnizado
+// Funcion que conduce el click o manejar click con el evento en ingles
+// Esta funcion se puede pasar al padre y no desde afuera para que sea mas limpio
+/*
+function handleClick(value) {
+    value += 1
+    console.log(value)
+}
+/*
+
+// Componente que se encarga de mostrar el boton retornando el boton desde la función
+//Hacemos lo que se llama desestructuración de argumentos para hacerlo mas limpio y facil de entender
+//Esto aca se puede hacer mas optimo para que los registros nose hagan desde afuera del componente
+/*
+export const ContadorApp = ({ value }) => {
+    return (
+        <>
+            <h1>Contador:</h1>
+            <p>{value}</p>
+            <hr />
+            <button onClick={() => handleClick(value)} >
+                Soy un botón
+            </button>
+        </>
+    )
+}
+*/
+
+
+// rafc  React Arrow Component Function
+// Aca si lo hacempos dentro de la funcion esto pasara al padre directamente
+// Funcion handleClick es conducir click
+/*
+export const ContadorApp = ({ value }) => {
+    function handleClick() {
+        value += 1
+        console.log(value)
+    }
+
+    return (
+        <>
+            <h1>Contador:</h1>
+            <p>{value}</p>
+            <hr />
+            <button onClick={handleClick}>
+                Soy un botón
+            </button>
+        </>
+    )
+}   
+*/
