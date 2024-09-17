@@ -18,12 +18,15 @@ export const ContadorApp = ({ value }) => {
         setContador(contador + 1)
     }
 
-    
+
     //Reemplazamos value por contador para ahora si modificar el estado de la variable 
     return (
         <>
             <h1>Contador:</h1>
             <p>{contador}</p>
+            <p id="Color-Parrafo">Como pudiste observar, cada vez que damos enter a nuestro boton cambiamos
+                el estado de nuestro contador<br />
+                sumandole 1 a nuestro valor por default  de nuestro Contador  </p>
             <hr />
             <button onClick={handleClick}>
                 Soy un botón

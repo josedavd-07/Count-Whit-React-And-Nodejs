@@ -12,6 +12,10 @@ p {
     text-align: center;
 }
 
+#Color-Parrafo{
+    color: #88e70c;
+}
+
 button {
     font-family: 'Courier New', Courier, monospace;
     background-color: #b80fe2;
