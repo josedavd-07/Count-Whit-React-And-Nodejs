@@ -2,7 +2,6 @@ import React from 'react'
 import './styles/ContadorApp.css'
 import { useState } from 'react'
 
-
 // rafc  React Arrow Component Function
 // Aca si lo hacempos dentro de la funcion esto pasara al padre directamente
 // Funcion handleClick es conducir click en ingles y se encarga de manejar el evento
@@ -17,7 +16,6 @@ export const ContadorApp = ({ value }) => {
     const handleClick = () => {
         setContador(contador + 1)
     }
-
 
     //Reemplazamos value por contador para ahora si modificar el estado de la variable 
     return (
