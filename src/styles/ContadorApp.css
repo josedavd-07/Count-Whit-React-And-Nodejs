@@ -1,4 +1,4 @@
-h1 {
+.titulo-encabezado {
     font-family: 'Courier New', Courier, monospace;
     color-scheme: dark;
     text-align: center;
@@ -16,7 +16,7 @@ p {
     color: #88e70c;
 }
 
-button {
+.ajustes-button{
     font-family: 'Courier New', Courier, monospace;
     background-color: #b80fe2;
     color: white;
@@ -31,12 +31,12 @@ button {
     margin: 0 auto;
 }
 
-button:hover {
+.ajustes-button:hover {
     background-color: #e94e77;
     /* Color diferente para hover */
 }
 
-button:active {
+.ajustes-button:active {
     background-color: #046063;
     /* Color diferente para active */
     transform: scale(0.95);
@@ -48,4 +48,9 @@ button:active {
     bottom: 0;
     width: 100%;
     height: 60px;
+}
+
+hr {
+    border-color: white;
+    border: solid 5px white;
 }
