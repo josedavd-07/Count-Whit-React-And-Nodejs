@@ -25,10 +25,11 @@ export const ContadorApp = ({ value }) => {
             <p id="Color-Parrafo">Como pudiste observar, cada vez que damos enter a nuestro boton cambiamos
                 el estado de nuestro contador<br />
                 sumandole 1 a nuestro valor por default  de nuestro Contador  </p>
+            <hr />
             <button class="ajustes-button" onClick={handleClick}>
                 Soy un botón
-            </button> <br />
-            <hr /> <br />
+            </button>
+
             <footer class="ajustar-footer">
                 <p>Todos los derechos reservados &copy; {new Date().getFullYear()}</p>
             </footer>
